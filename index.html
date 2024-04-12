@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Website</title>
+  <!-- Add CSS styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Hotel Name</h1>
+  </header>
+  
+  <section id="menu">
+    <h2>Menu</h2>
+    <!-- Display default dishes with prices -->
+    <div class="dish">
+      <h3>Default Dish 1</h3>
+      <p>Price: $10</p>
+      <input type="text" placeholder="Enter quantity" class="dish-quantity">
+      <button class="add-to-order-btn" data-dish="Default Dish 1" data-price="10">Add to Order</button>
+    </div>
+    <div class="dish">
+      <h3>Default Dish 2</h3>
+      <p>Price: $15</p>
+      <input type="text" placeholder="Enter quantity" class="dish-quantity">
+      <button class="add-to-order-btn" data-dish="Default Dish 2" data-price="15">Add to Order</button>
+    </div>
+    <!-- Add more default dishes here -->
+  </section>
+  
+  <section id="tables">
+    <h2>Tables</h2>
+    <!-- Display tables with table numbers -->
+    <input type="text" placeholder="Enter table number" id="table-number">
+    <button id="select-table-btn">Select Table</button>
+  </section>
+  
+  <section id="orders">
+    <h2>Orders</h2>
+    <!-- Display selected dishes and tables -->
+    <ul id="order-list">
+      <!-- Order items will be dynamically added here -->
+    </ul>
+    <button id="edit-order-btn">Edit Order</button>
+    <button id="delete-order-btn">Delete Order</button>
+  </section>
+  
+  <section id="bills">
+    <h2>Bills</h2>
+    <!-- Display bills and total amount -->
+    <ul id="bill-list">
+      <!-- Bill items will be dynamically added here -->
+    </ul>
+    <input type="text" placeholder="Enter total amount" id="bill-total">
+    <button id="add-bill-btn">Add Bill</button>
+  </section>
+
+  <!-- Add JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
